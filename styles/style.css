@@ -29,7 +29,7 @@ body{
     font-size: 16px;
     color: #FFFFFF;
  }
- footer{
+ header{
     width: 1054px;
     height: 677px;
     background-color: #2D25A0;
@@ -61,6 +61,13 @@ body{
     width: 556.01px;
     height: 438px;
  }
+ /*---------------------------------------Animation-------------------------------- */
+ .banner :hover{
+     transform: rotate(100deg);
+     transition: transform 1s ease-in;
+     
+ }
+ 
 /* -------------------------------------------------------------------------------------------
                                        2nd part
 -------------------------------------------------------------------------------------------- */
@@ -94,6 +101,12 @@ body{
 }
 .blog{
    padding: 15px 15px 33px 15px;
+
+}
+.text{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 164px;
 }
 .write{
     color: #6C6C6C;
@@ -104,17 +117,63 @@ body{
                                                  3rd part
 ----------------------------------------------------------------------------------------------------*/
 
-.so-tired{
-    display: flex;
+
+
+.third-part{
+    margin-top: 165px;
+    margin-bottom: 58px;
+    margin-left: 182px;
+    margin-right: 156px;
+ }
+ .so-tired{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     /* box-shadow: 3px solid blue; */
     height: 80px;
     width: 100px;
     /* align-items: flex-start; */
-    margin-left: 182px;
-    margin-top: 100px;
-}
-.two img{
+    /* margin-left: 182px;
+    margin-top: 100px; */
+ }
+ .one{
+    width: 330px;
+ }
+ .two img{
     width: 567px;
-    height: 500px;
+    height: 427px;
     margin-left: 180px;
-}
+ }
+ .rrr{
+    font-size: 48px;
+    font-weight: bold;
+ }
+ /*--------------------
+  mission footer  
+  --------------------*/
+ .footer-bar{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    margin-top: 158px;
+     margin-bottom: 63px;
+  }
+  .football-logo{
+     margin-bottom: 20px;
+  }
+ .footer-bar .football-logo img{
+    width: 483.87px;
+    height: 110px;
+ }
+ .social-icon{
+    margin-bottom: 20px;
+ }
+ .footer-bar .social-icon a{
+    margin-right: 14px;
+    font-size: 20px;
+ }
+ .copyright{
+    color: #000000;
+    font-size: 18px;
+ }
+ 
